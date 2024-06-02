@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <!--Siempre va primero la hoja de bootstrap y luego tu hoja de estilos  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<!-- 
+    *HEADER (LOGO)
+    NAV
+    HERO (PRIMER VISTAZO)
+    *MAIN
+    SECCION
+    FOOTER
+
+    ROW -> col col col
+
+    Con la clase card no necesitas imh-fluid en tus imagenes se ocupa card-img-top , pero hacen lo mismo
+    La clase container-xl lo lleva el div o meta-etiqueta que tiene el primer elemento que no es un div
+ -->
+
+    <header class="py-4">
+        <h1 class="text-center">Tienda<span class="text-primary">Muebles</span></h1>
+    </header>
+
+    <div class="border-top py-4">
+        <div class="container navbar navbar-expand-lg navbar-light">
+            <a href="index.html" class="nombre-sitio navbar-brand d-lg-none fs-2 fw-bold text-uppercase">
+                Tienda Muebles
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navegacion" class="collapse navbar-collapse">
+                <nav class="container navbar-nav text-center d-flex flex-md-row justify-content-md-between">
+                    <a class="text-dark text-decoration-none" href="index.html">Inicio</a>
+                    <a class="text-dark text-decoration-none" href="nosotros.html">Nosotros</a>
+                    <a class="text-dark text-decoration-none" href="tienda.html">Tienda</a>
+                    <a class="text-dark text-decoration-none" href="blog.html">Blog</a>
+                    <a class="text-dark text-decoration-none" href="galeria.html">Galeria</a>
+                    <a class="text-dark text-decoration-none" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- El hero muestra una imagen y se manda a llamar desde el CSS -->
+    <div class="hero"></div>
+
+    <main class="container-xl py-5">
+        <h2 class="text-center my-5">Nuestros Productos</h2>
+        
+        <!-- Accesamos al grid de bootstrap con row-->
+        <!-- ROW 1 -->
+        <div class="row pt-5 g-0 mb-4">
+            <div class="col-md-8 producto"> <!--Se deckara la clase producto para que se pueda editar la imagen en CSS-->
+                <img class="img-fluid" src="img/producto1.jpg" alt="imagen producto">
+            </div>
+            <div class="col-md-4 bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                <h3>Producto 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorum optio omnis error quas sint vita</p>
+                <p class="fs-1 fw-bold">$1,000,000.00</p>
+                <!-- En este enlace no se ocupo el with de 100% porque d-flex ya lo ensancha solo -->
+                <a href="#" class="btn btn-success fs-3 fw-bold text-uppercase py-3">Agregar al carrito</a>
+            </div>
+        </div>
+        
+        <!-- ROW 2 -->
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/producto2.jpg" alt="imegen producto">
+                    <div class="card-body text-center text-white bg-primary p-5">
+                        <h3>Producto 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p class="fs-1 fw-bold">$12,000.00</p>
+                        <a class="btn btn-success fs-3 fw-bold text-uppercase py-3 w-100" href="#">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/producto3.jpg" alt="imegen producto">
+                    <div class="card-body text-center text-white bg-primary p-5">
+                        <h3>Producto 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <p class="fs-1 fw-bold">$12,000.00</p>
+                        <a class="btn btn-success fs-3 fw-bold text-uppercase py-3 w-100" href="#">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW 3 -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/producto4.jpg" alt="imagen producto">
+                    <div class="card-body bg-primary text-white text-center py-5">
+                        <h3>Producto 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="fw-bold fs-1">$12,000.00</p>
+                        <a href="#" class="btn btn-success w-100 fw-bold fs-3 text-uppercase py-3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/producto5.jpg" alt="imagen producto">
+                    <div class="card-body bg-primary text-white text-center py-5">
+                        <h3>Producto 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="fw-bold fs-1">$12,000.00</p>
+                        <a href="#" class="btn btn-success w-100 fw-bold fs-3 text-uppercase py-3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/producto6.jpg" alt="imagen producto">
+                    <div class="card-body bg-primary text-white text-center py-5">
+                        <h3>Producto 6</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="fw-bold fs-1">$12,000.00</p>
+                        <a href="#" class="btn btn-success w-100 fw-bold fs-3 text-uppercase py-3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container-xl">
+        <h2 class="text-center py-5">Categorias de Productos</h2>
+        
+        <div class="row">
+            <div class="col-md-4 categoria">
+                <div class="overflow-hidden">
+                    <img class="img-fluid" src="img/categoria1.jpg" alt="imagen categoria">
+                </div>
+                <a class="text-dark fs-2 text-decoration-none d-block text-center py-3" href="#">Oficina</a>
+            </div>
+            <div class="col-md-4 categoria">
+                <div class="overflow-hidden">
+                    <img class="img-fluid" src="img/categoria2.jpg" alt="imagen categoria">
+                </div>
+                <a class="text-dark fs-2 text-decoration-none d-block text-center py-3" href="#">Hogar</a>
+            </div>
+            <div class="col-md-4 categoria">
+                <div class="overflow-hidden">
+                    <img class="img-fluid" src="img/categoria3.jpg" alt="imagen categoria">
+                </div>
+                <a class="text-dark fs-2 text-decoration-none d-block text-center py-3" href="#">Cocina</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5 pt-5 border-top">
+        <div class="container-xl mt-5">
+
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h3 class="mb-4">Categorias</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-decoration-none text-dark" href="#">Cocina</a>
+                        <a class="text-decoration-none text-dark" href="#">Oficina</a>
+                        <a class="text-decoration-none text-dark" href="#">Jardin</a>
+                        <a class="text-decoration-none text-dark" href="#">Cochera</a>
+                        <a class="text-decoration-none text-dark" href="#">Dormitorios</a>
+                    </nav>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h3 class="mb-4">Sobre Nosotros</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-decoration-none text-dark" href="#">Nuestra Historia</a>
+                        <a class="text-decoration-none text-dark" href="#">Mision, Vision y Valores</a>
+                        <a class="text-decoration-none text-dark" href="#">Carreras</a>
+                        <a class="text-decoration-none text-dark" href="#">Politica de Privacidad</a>
+                        <a class="text-decoration-none text-dark" href="#">Terminos del Servicio</a>
+                    </nav>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h3 class="mb-4">Soporte</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-decoration-none text-dark" href="#">Preguntas Frecuentes</a>
+                        <a class="text-decoration-none text-dark" href="#">Ayuda en Linea</a>
+                        <a class="text-decoration-none text-dark" href="#">Confianza y Seguridad</a>
+                    </nav>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center fs-2">Todos los derechos Reservados. TiendaMuebles</p>
+        </div>
+    </footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
