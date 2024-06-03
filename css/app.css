@@ -1,0 +1,111 @@
+:root{
+    --bs-blue: #037bc0;
+    --bs-green: #8cbc00;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+@media(min-width: 768px){
+    h1{
+        font-size: 5rem;
+    }
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+@media(min-width: 768px){
+    h2{
+        font-size: 4rem;
+    }
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+@media(min-width: 768px){
+    h3{
+        font-size: 3rem;
+    }
+}
+/* Reescribir codigo */
+.text-primary,.nombre-sitio {
+    color: var(--bs-blue)!important;
+}
+
+.btn-success{
+    background-color: var(--bs-green)!important;
+}
+
+/* se lo asigno de nuevo al div con ese selector */
+.bg-primary{
+    background-color: var(--bs-blue)!important;
+}
+
+/* Aqui se declaran los tamaños para el celular o para tamaños normales */
+.hero{
+     background-image: url(../img/principal.jpg);
+     height: 25rem;
+     background-size: cover;
+     background-position: center center;
+}
+
+/* En esta query se declaran los tamanos o se especifican para tablets y pantallas mas grandes */
+@media (min-width: 768px) {
+    .hero{
+        height: 55rem;
+    }
+}
+
+/* Productos */
+@media (min-width:768px) {
+    .producto img {
+        height: 43rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Animamos la transformacion */
+.categoria img{
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+/* Declaramos la transformacion y cual seria */
+.categoria img:hover{
+    transform: scale(1.2);
+}
+
+/* Primera opcion , le pone margin bottom a todos los li , incluso al ultimo cosa que no es necesaria
+.galeria li{
+    margin-bottom: 1rem;
+}
+
+.galeria li:last-of-type {
+    margin-bottom: 0;
+} */
+
+/* Todos excepto el ultimo es como se traduce la siguiente linea */
+.galeria li:not(:last-of-type){
+    margin-bottom: 1rem;
+}
+
